@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="DodgeGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DodgeGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas x:Name="cnvCanvas" Margin="-10,3,10,-3">
+            <Image x:Name="imgMain" Height="100" Canvas.Left="780" Canvas.Top="160" Width="100" Source="Assets/player.png"/>
+            <Button x:Name="btnEasy" Content="Easy" Canvas.Left="33" Canvas.Top="53" FontSize="30" Click="btnEasy_Click" Height="58" Width="271"/>
+            <Button x:Name="btnNewGame" Content="NewGame" Canvas.Left="33" FontSize="30" Height="58" Width="271" Canvas.Top="410" Click="btnNewGame_Click"/>
+            <Button x:Name="btnPause" Content="PAUSE" Canvas.Left="33" Canvas.Top="353" FontSize="30" Click="btnPause_Click" Height="58" Width="271"/>
+            <Button x:Name="btnMedium" Content="Medium" Height="58" FontSize="30" Canvas.Left="33" Canvas.Top="110" Width="271" Click="btnMedium_Click"/>
+            <Button x:Name="btnHard" Content="Hard" Height="58" FontSize="30" Canvas.Left="33" Canvas.Top="167" Width="271" Click="btnHard_Click"/>
+            <TextBlock x:Name="txtLevels" Height="30" Canvas.Left="36" TextWrapping="Wrap" Text="Game Levels" Canvas.Top="13" Width="265" TextAlignment="Center" FontSize="30"/>
+            <TextBlock x:Name="txtLevels_Copy" Height="30" Canvas.Left="36" TextWrapping="Wrap" Text="Game Controls" Canvas.Top="254" Width="265" TextAlignment="Center" FontSize="30"/>
+            <Button x:Name="btnContinue" Content="CONTINUE" Canvas.Left="33" Canvas.Top="295" FontSize="30" Height="58" Width="271" Click="btnContinue_Click"/>
+        </Canvas>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="23,472,0,0" VerticalAlignment="Top" FontSize="30" RenderTransformOrigin="0.119,-0.69" Click="btnExit_Click" Width="271" Height="58"/>
+
+    </Grid>
+</Page>
